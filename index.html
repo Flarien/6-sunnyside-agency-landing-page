@@ -4,63 +4,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="stylesheet" href="globals.css">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
   <header>
     <nav>
-      <img src="/images/logo.svg" alt="Logo empresa">
+      <img class="logo" src="/images/logo.svg" alt="Logo empresa">
       <ul>
-        <li>About</li>
-        <li>Services</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a class="contact" href="#">Contact</a></li>
+        
       </ul>
     </nav>
-    <div>
+    <div class="hero">
       <h1>We are creatives</h1>
-      <img src="/images/desktop/image-header.jpg" alt="media naranja">
+      <img  class="hero-arrow" src="/images/icon-arrow-down.svg" alt="flecha apuntando hacia abajo">
+      <img class="hero-img" src="/images/desktop/image-header.jpg" alt="media naranja">
     </div>
   </header>
   <main>
     <section>
-      <div>
+      <div class="grid1">
         <div>
           <h2>Transform your brand</h2>
           <p>We are a full-service creative agency specializing in helping brands grow fast.
             Engage your clients through compelling visuals that do most of the marketing for you.</p>
-          <button>Learn more</button>
+          <a class="galery-link" href="#">Learn more</a>
         </div>
         <div><img src="/images/desktop/image-transform.jpg" alt="huevo de gallina"></div>
       </div>
-      <div>
+      <div class="grid2">
         <div>
           <h2>Stand out to the right audience</h2>
           <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
             we’ll build
             and extend your brand in digital places.</p>
-          <button>Learn more</button>
+          <a class="galery-link" href="#">Learn more</a>
         </div>
         <div><img src="/images/desktop/image-stand-out.jpg" alt="copa"></div>
       </div>
-      <div>
+      <div class="grid1">
         <div><img src="/images/desktop/image-graphic-design.jpg" alt="cerezas">
           <h2>Graphic design</h2>
           <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures

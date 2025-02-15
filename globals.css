@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+:root {
+  --softRed: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --darkCyan: hsl(
+    167,
+    40%,
+    24%
+  ); /*  Dark desaturated cyan (graphic design text) */
+  --darkBlue: hsl(198, 62%, 26%); /* Dark blue (photography text) */
+  --darkCyan2: hsl(168, 34%, 41%); /* Dark moderate cyan (footer) */
+  --bg-cyan: #3dbfff; /* background */
+  --darkBlue1: hsl(212, 27%, 19%); /* Very dark desaturated blue */
+  --darkBlue2: hsl(213, 9%, 39%); /* Very dark grayish blue */
+  --darkBlue3: hsl(232, 10%, 55%); /* Dark grayish blue */
+  --grayishBlue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* Formato */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+
+header {
+  background-color: #3dbfff;
+  color: hsl(0, 0%, 100%);
+  padding: 0;
+}
+
+header nav {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 50;
+  padding: 30px 50px;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  gap: 60px;
+  font-family: 'Barlow', serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 18px;
+}
+
+.contact {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: var(--white);
+  color: black;
+  padding: 15px 20px;
+  border-radius: 25px;
+  border: none;
+}
+
+.contact:hover {
+  color: var(--white);
+  background-color: rgb(111, 207, 255);
+}
+
+.logo {
+  width: 180px;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+h1 {
+  display: flex;
+  font-size: 56px;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0 auto;
+  transform: translateY(120px);
+  letter-spacing: 12px;
+}
+
+.hero-arrow{
+  transform: translateY(220px);
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  object-fit: cover;
+  margin: 0 auto;
+  z-index: -1;
+}
+
+/* Main */
+main{
+  position: relative;
+  margin: 0 auto;
+}
+
+h2{
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 38px;
+  letter-spacing: 2px;
+  color: var(--darkBlue1);
+}
+
+p {
+  font-family: 'Barlow', serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: -1px;
+  color: var(--darkBlue2);
+}
+
+.galery-link{
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: 18px;
+  color: var(--darkBlue1);
+}
+
+.grid1{
+  display: flex;
+  flex-direction: row;
+}
+
+.grid2{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
